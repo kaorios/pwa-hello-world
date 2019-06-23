@@ -90,6 +90,10 @@ sw.addEventListener('message', async (event) => {
       sw.skipWaiting();
       break;
     }
+    case 'notification': {
+      showNotification('Notification!');
+      break;
+    }
 
     default: // do nothing;
   }
